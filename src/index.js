@@ -8,7 +8,8 @@ import history from "./utils/history";
 import { getConfig } from "./config";
 
 const onRedirectCallback = (appState) => {
-  history.push("https://demo-nextgen-oie-demo.okta.com/home/bookmark/0oaed5l9xsTkgu0nR697/2557");
+  return <AbsoluteRedirect to={ "https://demo-nextgen-oie-demo.okta.com/home/bookmark/0oaed5l9xsTkgu0nR697/2557"} />
+  //history.push("https://demo-nextgen-oie-demo.okta.com/home/bookmark/0oaed5l9xsTkgu0nR697/2557");
   //history.push(
   //  appState && appState.returnTo ? appState.returnTo : window.location.pathname
   //);
