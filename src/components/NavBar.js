@@ -76,7 +76,7 @@ const NavBar = () => {
                     id="qsLoginBtn"
                     color="primary"
                     className="btn-margin"
-                    onClick={() => loginWithRedirect()}
+                    onClick={() => loginWithRedirect({ authorizationParams: { organization: getConfig().organization, organization_name: getConfig.organization_name, invitation: getConfig().invitation}})}
                   >
                     Log in
                   </Button>
