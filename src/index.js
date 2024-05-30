@@ -25,7 +25,7 @@ const providerConfig = {
   onRedirectCallback,
   authorizationParams: {
     redirect_uri: window.location.origin,
-    ...(config. ? { audience: config.audience } : null),
+    ...(config.audience ? { audience: config.audience } : null),
     ...(config.organization ? {organization: config.organization} : null),
     ...(config.organization_name ? {organization_name: config.organization_name} : null),
     ...(config.invitation ? {invitation: config.invitation} : null),
