@@ -19,6 +19,7 @@ import {
 } from "reactstrap";
 
 import { useAuth0 } from "@auth0/auth0-react";
+import { getConfig } from "../config";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,7 +76,7 @@ const NavBar = () => {
                     id="qsLoginBtn"
                     color="primary"
                     className="btn-margin"
-                    onClick={() => loginWithRedirect()}
+                    onClick={() => WithRedirect()}
                   >
                     Log in
                   </Button>
@@ -119,7 +120,7 @@ const NavBar = () => {
                     id="qsLoginBtn"
                     color="primary"
                     block
-                    onClick={() => loginWithRedirect({})}
+                    onClick={() => loginWithRedirect({ authorizationParams: { organization: getConfig().organization, organization_name: getConfig.organization_name, invitation: getConfig().invitation}})
                   >
                     Log in
                   </Button>

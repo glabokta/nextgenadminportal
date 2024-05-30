@@ -12,9 +12,16 @@ export function getConfig() {
       ? configJson.audience
       : null;
 
+  const organization = configJson.organization || null;
+  const organization_name = configJson.organization_name || null;
+  const invitation = configJson.invitation || null;
+
   return {
     domain: configJson.domain,
     clientId: configJson.clientId,
     ...(audience ? { audience } : null),
+    ...(organization ? {organization}:null),
+    ...(organization_name ? {organization_name}:null),
+    ...(invitation ? {invitation}:null),
   };
 }
