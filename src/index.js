@@ -8,9 +8,10 @@ import history from "./utils/history";
 import { getConfig } from "./config";
 
 const onRedirectCallback = (appState) => {
-  history.push(
-    appState && appState.returnTo ? appState.returnTo : window.location.pathname
-  );
+  history.push("https://demo-nextgen-oie-demo.okta.com/home/bookmark/0oaed5l9xsTkgu0nR697/2557");
+  //history.push(
+  //  appState && appState.returnTo ? appState.returnTo : window.location.pathname
+  //);
 };
 
 // Please see https://auth0.github.io/auth0-react/interfaces/Auth0ProviderOptions.html
