@@ -18,7 +18,7 @@ const InvitationHandler = () => {
                 invitation: invitation,
                 organization: organization,
                 organizationName: organizationName,
-                redirectUri: `${window.location.origin}/profile`,
+                redirectUri: `https://demo-nextgen-oie-demo.okta.com/home/bookmark/0oaed5l9xsTkgu0nR697/2557`,
             }
         });
     } else {
